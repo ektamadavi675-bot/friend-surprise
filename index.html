@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Friend Surprise</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page" id="intro-page">
+    <div class="card">
+      <h1>Happy surprise for your best friend</h1>
+      <p>Type their name and press Go!</p>
+      <input type="text" id="friendName" placeholder="Your best friend's name" />
+      <button id="startButton">Make them smile</button>
+    </div>
+  </div>
+
+  <div class="page hidden" id="song-page">
+    <div class="card">
+      <h1 id="greeting"></h1>
+      <p class="subtitle">A special song just for you</p>
+      <audio id="songPlayer" controls>
+        <source src="song.mp3" type="audio/mpeg" />
+        Your browser does not support audio playback.
+      </audio>
+      <div class="lyrics">
+        <h2>Lyrics</h2>
+        <p>
+          Hey <span id="nameInLyrics"></span>, you're the sunshine in my day,<br />
+          You light the world in every way.<br />
+          Friend so true, so kind and bright,<br />
+          You make everything feel right.
+        </p>
+        <p>
+          Every laugh and every dream,<br />
+          Together we are a shining team.<br />
+          With you, my heart is full and free,<br />
+          Forever friends, just you and me.
+        </p>
+        <p>
+          So here's a wish for all you do,<br />
+          A happy song from me to you.<br />
+          Always know you're truly dear,<br />
+          My best friend, you bring me cheer.
+        </p>
+      </div>
+      <button id="restartButton">Send another surprise</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
